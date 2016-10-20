@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>INSERT YOUR NAME</title>
+    <title>PATRICIA PATCHONG</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
         <div class="headline">
             <div class="container">
                 <h2>Lesson 3 Highlights</h2>
-                <h3>INSERT YOUR NAME</h3>
+                <h3>PATRICIA PATCHONG</h3>
             </div>
         </div>
     </header>
@@ -77,55 +77,77 @@
 
         <!-- First Featurette -->
         <div class="featurette" id="topic1">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="./images/laptop.jpg">
             <h2 class="featurette-heading">Highlight #1
-                <span class="text-muted">Topic 1 Header</span>
+                <span class="text-muted">Local Version Control systems</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">A Version control is a system that records changes to a file or set of files over time allowing users to recall specific versions later.
+
+
+</p>
+<p class="lead">
+    To keep track of the work done, people used to save multiple files with different dates and file names or copy different steps of the work in to different directory. This method may eventually become difficult to manage, especially when dealing with tons of documents.
+    </p>
+    <p class="lead">
+        That why programmers developed local version systems: a system with a simple database that kept all the changes to files under revision control. One of the more popular VCS tools was a system called RCS.
+        </p>
+    
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
         <div class="featurette" id="topic2">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="./images/centralized1.jpg">
             <h2 class="featurette-heading">Highlight #2
-                <span class="text-muted">Topic 2 Header</span>
+                <span class="text-muted">Centralized Version Control Systems</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Programmers faced challenges with local version control system when it came to collaborating with others on other systems. This led to the development of Centralized Version Control Systems (CVCSs): single server that contains all the versioned files, and a number of clients that check out files from that central place. </p>
+        <p class="lead">This system worked well for several years but had a great inconvenient: the single point of failure that the centralized server represented. If that server went down for an hour, then during that hour nobody could collaborate at all or save versioned changes to anything they were working on. If the hard disk the central database was on became corrupted, and proper backups hadn’t been kept, one would absolutely lose everything – the entire history of the project except whatever single snapshots people happened to have on their local machines. Local VCS systems suffer from this same problem – whenever you have the entire history of the project in a single place, you risk losing everything. </p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
         <div class="featurette" id="topic3">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="./images/remote.png">
             <h2 class="featurette-heading">Highlight #3
-                <span class="text-muted">Topic 3 Header</span>
+                <span class="text-muted">Distributed Version Control Systems</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">The inconvenient of Local and Centralized Version Control Systems led to the development of Distributed Version Control Systems (DVCSs). In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files: they fully mirror the repository. Thus if any server dies, and these systems were collaborating via it, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.</p>
+        <p class="lead">Furthermore, many of these systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project. This allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models. </p>
         </div>
         
         <hr class="featurette-divider">
         
        <!-- Fourth Featurette -->
         <div class="featurette" id="topic4">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="./images/Git.png">
             <h2 class="featurette-heading">Highlight #4
-                <span class="text-muted">Topic 4 Header</span>
+                <span class="text-muted">Git</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Git is a free and open source Distributed Control Version System. It thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.</p>
+        <p class="lead">
+            Most operations in Git only need local files and resources to operate – generally no information is needed from another computer on your network
+            </p>
+            <p class="lead">
+                It offers a lot of remarkable advantages: Every user has a complete copy of the repository data stored locally on their machine, no single point if failure, most operations are almost instantaneous. Everything in Git is check-summed before it is stored and is then referred to by that checksum. This means it’s impossible to change the contents of any file or directory without Git knowing about it
+            </p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Fifth Featurette -->
         <div class="featurette" id="topic5">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="./images/GitHub.png">
             <h2 class="featurette-heading">Highlight #5
-                <span class="text-muted">Topic 5 Header</span>
+                <span class="text-muted">GitHub - Managing An Organization</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">In addition to single-user accounts, GitHub has what are called Organizations. Organizational accounts have a namespace where all their projects exist. These accounts represent a group of people with shared ownership of projects, and there are many tools to manage subgroups of those people. Normally these accounts are used for Open Source groups (such as “perl” or “rails”) or companies (such as “google” or “twitter”).</p>
+         <p class="lead">The “+”at the top-right of any GitHub page is used to create a new organization. </p>
+          <p class="lead"> Organizations are associated with individual people by way of teams, which are simply a grouping of individual user accounts and repositories within the organization and what kind of access those people have in those repositories.</p>
+           <p class="lead">The Organization page shows a simple dashboard of all the repositories, users and teams that are under this organization. </p>
+            <p class="lead">Organizations also give owners access to all the information about what went on under the organization.  </p>
         </div>
 
         <hr class="featurette-divider">
